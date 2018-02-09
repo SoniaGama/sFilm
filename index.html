@@ -16,84 +16,103 @@
     <img src="" alt="">
   </section>
   <main>
-    <section>
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#log-in">
-         Log in
-      </button>
-      <!-- Modal -->
-      <div class="modal fade" id="log-in" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              ...
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-          </div>
+    <div id="carouselExampleSlidesOnly" class="carousel slide m-40 " data-ride="carousel">
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <img class="d-block img-fluid" src="assets/images/avatar.jpg" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block img-fluid" src="assets/images/gahoo.jpg" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block img-fluid" src="assets/images/galaxia.jpg" alt="Third slide">
         </div>
       </div>
-    </section>
+    </div>
+    <main>
+      <!-- botón login -->
+      <button type="button" class="mr-40 btn-line btn-lg bkg-red text-white" data-toggle="modal" data-target="#sign-up">
+           Sign Up
+      </button>
+      <a href="views/genres.html" id="init" class="offset-2 btn btn-down1 btn-lg bkg-red text-white">Login</a>
 
-      <section>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#create-account">
-           Create Account
-        </button>
+          <div class="modal fade" id="sign-up" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Sign Up!</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <!-- formulario -->
+                          <div class="rows">
+                          <div class="row">
+                          	<div class="col-md-12 col-md-offset-4">
+                          		<div class="panel panel-default">
+                      			  	<div class="panel-heading">
+
+                      			 	</div>
+                      			  	<div class="panel-body">
+                      			    	<form accept-charset="UTF-8" role="form">
+                                          <fieldset>
+                      			    	  	<div class="form-group">
+                      			    		    <input class="form-control" placeholder="yourmail@example.com" name="email" type="text">
+                      			    		</div>
+                      			    		<div class="form-group">
+                      			    			<input class="form-control" placeholder="Password" name="password" type="password" value="">
+                      			    		</div>
+                      			    		<div class="checkbox">
+                      			    	    	<label>
+                      			    	    		<input name="remember" type="checkbox" value="Remember Me"> Remember Me
+                      			    	    	</label>
+                      			    	    </div>
+                      			    		<input class="btn btn-lg btn-info btn-block" type="submit" value="Login">
+                      			    	</fieldset>
+                      			      	</form>
+                                            <hr/>
+                                          <center><h4>OR</h4></center>
+                                          <input class="btn btn-lg btn-primary btn-block" type="submit" value="Login via facebook">
+                      			    </div>
+                      			</div>
+                      		</div>
+                      	</div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
         <!-- Modal -->
-        <div class="modal fade" id="create-account" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                ...
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+
+
+        <section class="mt-10">
+
+          <a href="" class="offset-4" data-toggle="modal" data-target="#recover-password">Recover password</a>
+
+          <div class="modal fade" id="recover-password" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <!--/Modal-->
-      </section>
+        </section>
+    </main>
 
-      <section>
-        <a href="" data-toggle="modal" data-target="#recover-password">Recover password</a>
-        <div class="modal fade" id="recover-password" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                ...
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-  </main>
   <!--SCRIPTS-->
   <script src="js/jquery.js"></script>
   <script src="js/jquery.min.js"></script>
